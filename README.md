@@ -85,13 +85,13 @@ GET /orders?price=1000
 
 ```json
 {
-	"id": "order_1234567890",
-	"entity": "order",
-	"amount": 1000,
-	"currency": "INR",
-	"receipt": "receipt#1",
-	"createdAt": 1671234567
-	// ... other captivating order details
+  "id": "order_1234567890",
+  "entity": "order",
+  "amount": 1000,
+  "currency": "INR",
+  "receipt": "receipt#1",
+  "createdAt": 1671234567
+  // ... other captivating order details
 }
 ```
 
@@ -109,38 +109,26 @@ GET /orders/order_1234567890/payments
 
 ```json
 {
-	"count": 2,
-	"entity": "collection",
-	"items": [
-		{
-			"id": "pay_1234567890",
-			"entity": "payment",
-			"order_id": "order_1234567890",
-			"amount": 1000,
-			"status": "captured"
-			// ... other captivating payment details
-		},
-		{
-			"id": "pay_0987654321",
-			"entity": "payment",
-			"order_id": "order_1234567890",
-			"amount": 2000,
-			"status": "captured"
-			// ... other captivating payment details
-		}
-	]
-	// ... other captivating collection details
+  "count": 2,
+  "entity": "collection",
+  "items": [
+    {
+      "id": "pay_1234567890",
+      "entity": "payment",
+      "order_id": "order_1234567890",
+      "amount": 1000,
+      "status": "captured"
+      // ... other captivating payment details
+    },
+    {
+      "id": "pay_0987654321",
+      "entity": "payment",
+      "order_id": "order_1234567890",
+      "amount": 2000,
+      "status": "captured"
+      // ... other captivating payment details
+    }
+  ]
+  // ... other captivating collection details
 }
 ```
-
-## ✨ Contributing
-
-Join the league of magical developers! Contributions are welcomed and celebrated in this mystical realm. If you encounter any issues or have ideas for enchantments, feel free to open an issue or cast a pull request.
-
-## 📜 License
-
-#### This project is licensed under the [MIT License](LICENSE). Cast your spells responsibly!
-
-Feel free to further customize the README according to your project's requirements and add any additional information or sections as needed.
-
-Happy coding!
